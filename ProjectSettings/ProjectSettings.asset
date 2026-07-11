@@ -932,11 +932,12 @@ PlayerSettings:
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
   enableDirectStorage: 0
-  cloudProjectId: a40f30b4-388b-4ae4-b6c3-34355c767f5a
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: My project 2026-07-09_11-04-54
   organizationId: wyvex9541
+  projectName: 
+  organizationId: 
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
