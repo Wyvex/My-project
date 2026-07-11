@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody rb;
 
     [Header("Movement Settings")]
-    [SerializeField] float moveSpeed = 6f;
+    [SerializeField] float moveSpeed = 5f;
     
     [Header("Ground Check Settings")]
     [SerializeField] Transform groundCheck;
@@ -18,8 +18,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private RectTransform joystickJump; 
 
     private bool uiJumpPressed = false;
-
-    private float velocityThreshold = 0.1f;
 
     void Start()
     {
@@ -36,14 +34,9 @@ public class PlayerMovement : MonoBehaviour
 
             EventTrigger.Entry entry = new EventTrigger.Entry();
             entry.eventID = EventTriggerType.PointerDown;
-            entry.callback.AddListener((data) => { OnUIJumpDown(); });
+            entry.callback.AddListener((data) => {uiJumpPressed = true;});
             trigger.triggers.Add(entry);
         }
-    }
-
-    void OnUIJumpDown()
-    {
-        uiJumpPressed = true;
     }
 
     void Update()
@@ -69,24 +62,21 @@ public class PlayerMovement : MonoBehaviour
 
         if ((Input.GetButtonDown("Jump") || uiJumpPressed) && IsGrounded()) {
             TriggerJump();
+            uiJumpPressed = false;
         }
-
-        uiJumpPressed = false;
     }
 
     bool hasJumped = false;
 
     bool IsGrounded() {
-    if (rb.linearVelocity.y < -velocityThreshold) {
-        hasJumped = false;
-        return false; 
-    }
-
-    if (rb.linearVelocity.y > velocityThreshold) {
-        return false;
-    }
-
-    return !hasJumped; 
+        if (rb.linearVelocity.y < -.01f || rb.linearVelocity.y > .01f) {
+            hasJumped = false;
+            return false; 
+        }
+        else
+        {
+            return true;    
+        }
     }
 
     public void TriggerJump() {
