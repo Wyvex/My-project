@@ -91,7 +91,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void TriggerJump() {
         rb.linearVelocity = new Vector3(rb.linearVelocity.x, moveSpeed, rb.linearVelocity.z);
-        hasJumped = true; // Mark that we are in the air
         hasJumped = true;
     }
 }
