@@ -2804,6 +2804,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4007656917043096217, guid: b0ad158b483ae3340bb82859179c6163, type: 3}
+      propertyPath: joystickBG
+      value: 
+      objectReference: {fileID: 1577201136}
+    - target: {fileID: 4007656917043096217, guid: b0ad158b483ae3340bb82859179c6163, type: 3}
       propertyPath: joystickJump
       value: 
       objectReference: {fileID: 560409637}
