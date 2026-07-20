@@ -3468,6 +3468,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 657108fd14ab5554bbd58bddf1987d14, type: 3}
+--- !u!114 &1983238189 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4816792294240827393, guid: fb2d0dd9957f0c34ca5c7bd644d2aafb, type: 3}
+  m_PrefabInstance: {fileID: 419837053}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2039141160 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1065784706315669464, guid: 657108fd14ab5554bbd58bddf1987d14, type: 3}
@@ -3798,7 +3809,7 @@ PrefabInstance:
     - target: {fileID: 4007656917043096199, guid: b0ad158b483ae3340bb82859179c6163, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1983238189}
     - target: {fileID: 4007656917043096217, guid: b0ad158b483ae3340bb82859179c6163, type: 3}
       propertyPath: joystickBG
       value: 
