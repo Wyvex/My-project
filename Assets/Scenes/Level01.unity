@@ -2388,6 +2388,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4816792294240827393, guid: fb2d0dd9957f0c34ca5c7bd644d2aafb, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4816792294240827393, guid: fb2d0dd9957f0c34ca5c7bd644d2aafb, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6997868
+      objectReference: {fileID: 0}
+    - target: {fileID: 4816792294240827393, guid: fb2d0dd9957f0c34ca5c7bd644d2aafb, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4816792294240827393, guid: fb2d0dd9957f0c34ca5c7bd644d2aafb, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4816792294240827393, guid: fb2d0dd9957f0c34ca5c7bd644d2aafb, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 4816792294240827393, guid: fb2d0dd9957f0c34ca5c7bd644d2aafb, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4821388725780670218, guid: fb2d0dd9957f0c34ca5c7bd644d2aafb, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 339
